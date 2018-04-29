@@ -45,7 +45,7 @@ namespace Pwned
             {
                 data = HttpUtil.Get(request.Uri);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 response.Status = Status.Error;
                 response.Message = "Error calling Pwned Passwords: " + ex.Message;

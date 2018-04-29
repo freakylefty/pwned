@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text.RegularExpressions;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 
 namespace Pwned
 {
@@ -53,6 +52,7 @@ namespace Pwned
             return result;
         }
 
+        //https://stackoverflow.com/a/105793/376079
         public static string FormatNumber(int value)
         {
             return string.Format("{0:n0}", value);
